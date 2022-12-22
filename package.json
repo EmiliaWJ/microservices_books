@@ -1,0 +1,19 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd books && npm start\"",
+    "dev": "concurrently \"cd books && npm run dev\"",
+    "install": "concurrently \"cd books && npm i\"",
+    "postinstall": "mongo index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "mongodb": "^4.13.0"
+  }
+}
